@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assesment</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: monospace;
+      }
+      .map-container {
+        width: 400px;
+        height: 400px;
+        margin: 40px auto;
+        background-color: aquamarine;
+        cursor: crosshair;
+        border-radius: 5px;
+        position: relative;
+        align-content: center;
+        text-align: center;
+      }
+      .map-container:hover {
+        box-shadow: 0.5px 0.5px 5px #ccc;
+      }
+      .map-container small {
+        position: absolute;
+        padding: 2px;
+      }
+      .region {
+        margin: 10px auto;
+        padding: 12px 20px;
+        width: fit-content;
+        border-radius: 2px;
+        background-color: black;
+        color: white;
+        cursor: pointer;
+      }
+      .text-center {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="map-container">
+      <small id="x"></small>
+      <small id="center">.</small>
+      <small id="y"></small>
+    </div>
+    <p class="text-center">Gently move your mouse around the board</p>
+    <div class="region">
+      <small>pole: </small>
+      <small id="north-south"></small>
+      <small id="east-west"></small>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
